@@ -1,0 +1,6 @@
+/* ═══════════════════════════════════════════════════════════════
+   TMA Design System — global stylesheet entry point
+   Consumers link this one file; it pulls in the rest.
+   ═══════════════════════════════════════════════════════════════ */
+
+@import url("colors_and_type.css");

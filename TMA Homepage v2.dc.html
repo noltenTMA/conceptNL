@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TMA — Alles gaat beter met een talentgerichte organisatie</title>
+<meta name="description" content="TMA geeft inzicht in drijfveren en talenten. Zet medewerkers in op hun sterke punten voor betere prestaties, hogere motivatie en meer betrokkenheid.">
+<meta name="theme-color" content="#050038">
+<link rel="icon" href="assets/logo/tma-mark.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="TMA">
+<meta property="og:title" content="Alles gaat beter met een talentgerichte organisatie">
+<meta property="og:description" content="TMA geeft inzicht in drijfveren en talenten. Zet medewerkers in op hun sterke punten voor betere prestaties, hogere motivatie en meer betrokkenheid.">
+<meta property="og:image" content="assets/photo-1.png">
+<meta name="twitter:card" content="summary_large_image">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/tma-design-system-cd728b8b-3ec9-4145-887f-22e954f87fa4/styles.css">
+<script src="_ds/tma-design-system-cd728b8b-3ec9-4145-887f-22e954f87fa4/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--tma-canvas); }
+  a { color: var(--tma-blue); text-decoration: none; }
+  a:hover { color: var(--tma-navy); }
+
+  a, button, [role="button"], input {
+    transition: background-color .2s ease, border-color .2s ease, color .2s ease, opacity .2s ease, transform .2s ease;
+  }
+  a:active, button:active { transform: translateY(1px); }
+  button { font: inherit; color: inherit; }
+
+  :focus-visible {
+    outline: 2px solid var(--tma-blue);
+    outline-offset: 3px;
+    border-radius: var(--tma-radius-xs);
+  }
+  [data-on-navy] :focus-visible, [data-on-photo] :focus-visible { outline-color: #fff; }
+
+  .sr-skip {
+    position: absolute; left: var(--tma-space-4); top: var(--tma-space-4);
+    z-index: 100; transform: translateY(-250%);
+    padding: 10px 16px; background: var(--tma-surface); color: var(--tma-text);
+    font-size: var(--tma-fs-base); font-weight: var(--tma-fw-medium);
+    border-radius: var(--tma-radius-sm); box-shadow: var(--tma-shadow-md);
+  }
+  .sr-skip:focus { transform: translateY(0); }
+
+  @media (max-width: 1140px) { [data-r="navlinks"], [data-r="util"] { display: none !important; } [data-r="burger"] { display: flex !important; } }
+  @media (max-width: 1000px) { [data-r="anno"] { display: none !important; } }
+  @media (max-width: 700px) { [data-r="hero-meta"] { display: none !important; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: .001ms !important; animation-iteration-count: 1 !important;
+      transition-duration: .001ms !important;
+    }
+    a:active, button:active { transform: none; }
+  }
+</style>
+</helmet>
+
+<div style="--pad:clamp(20px,5vw,110px); width:100%; max-width:1920px; margin:0 auto; background:var(--tma-canvas); font-family:var(--tma-font-sans); color:var(--tma-text); overflow:hidden">
+
+  <a href="#hoofdinhoud" class="sr-skip">Naar de hoofdinhoud</a>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section aria-labelledby="hero-titel" style="min-width:0; position:relative; height:clamp(620px,90vh,900px); overflow:hidden">
+    <img src="assets/photo-1.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover">
+    <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(5,0,56,.58) 0%, rgba(5,0,56,.18) 32%, rgba(5,0,56,.88) 100%)"></div>
+
+    <div style="position:absolute; inset:0; display:flex; flex-direction:column">
+      <!-- nav + mega menu -->
+      <header data-on-photo onMouseLeave="{{ closeMenu }}" style="position:relative; z-index:20">
+        <!-- utility row -->
+        <nav aria-label="Servicenavigatie" data-r="util" style="display:flex; justify-content:flex-end; align-items:center; gap:24px; padding:16px var(--pad) 0; font-size:12px; font-weight:500; color:rgba(255,255,255,.72); white-space:nowrap">
+          <a href="{{ nav.filosofie }}" style="color:inherit" style-hover="color:#fff">Over TMA</a><a href="{{ nav.contact }}" style="color:inherit" style-hover="color:#fff">Contact</a><a href="{{ nav.opleiding }}" style="color:inherit" style-hover="color:#fff">Werken bij</a>
+          <a href="{{ nav.contact }}" style="color:inherit; display:flex; align-items:center; gap:6px" style-hover="color:#fff"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px; height:16px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path> <path d="M9 10a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path> <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path></svg>Inloggen</a>
+          <span style="display:flex; gap:6px; font-weight:700; color:rgba(255,255,255,.45)"><span style="color:#fff" aria-current="true">NL</span><span aria-hidden="true">/</span><a href="{{ nav.zoeken }}" style="color:inherit" style-hover="color:#fff">EN</a></span>
+        </nav>
+        <!-- main nav -->
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px 40px; padding:20px var(--pad) 0; white-space:nowrap">
+          <a href="TMA Homepage v2.dc.html" aria-label="TMA — naar de homepage" style="color:inherit; flex:none; display:block; line-height:0"><img src="assets/logo/tma-primary-reversed.svg" alt="TMA" style="height:clamp(30px,2.4vw,40px); width:auto; display:block"></a>
+          <nav aria-label="Hoofdnavigatie" data-r="navlinks" style="display:flex; gap:32px; font-size:15px; font-weight:500; color:#fff; flex:none">
+            <sc-for list="{{ menus }}" as="menu" hint-placeholder-count="5">
+              <a href="{{ menu.href }}" onMouseEnter="{{ menu.open }}" onFocus="{{ menu.open }}" aria-haspopup="true" aria-expanded="{{ menu.expanded }}" style="display:flex; align-items:center; gap:6px; padding:8px 0; color:{{ menu.color }}; border-bottom:2px solid {{ menu.underline }}">
+                {{ menu.label }}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none; opacity:.75"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M6 9l6 6l6 -6"></path></svg>
+              </a>
+            </sc-for>
+          </nav>
+          <div style="display:flex; align-items:center; gap:16px; flex:none; margin-left:auto">
+            <button type="button" data-r="burger" onClick="{{ toggleMobile }}" aria-expanded="{{ mobileExpanded }}" aria-controls="mobiel-menu" aria-label="{{ mobileLabel }}" style="display:none; width:38px; height:38px; padding:0; background:transparent; border-radius:var(--tma-radius-pill); border:1px solid rgba(255,255,255,.4); align-items:center; justify-content:center; color:#fff; flex:none; cursor:pointer" style-hover="background:rgba(255,255,255,.14)">
+              <sc-if value="{{ mobileOpen }}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:18px; height:18px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M18 6l-12 12"></path> <path d="M6 6l12 12"></path></svg></sc-if>
+              <sc-if value="{{ mobileClosed }}" hint-placeholder-val="{{ true }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:18px; height:18px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M4 6l16 0"></path> <path d="M4 12l16 0"></path> <path d="M4 18l16 0"></path></svg></sc-if>
+            </button>
+            <a href="{{ nav.zoeken }}" aria-label="Zoeken" style="width:38px; height:38px; border-radius:var(--tma-radius-pill); border:1px solid rgba(255,255,255,.4); display:flex; align-items:center; justify-content:center; color:#fff; flex:none" style-hover="background:rgba(255,255,255,.14)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:18px; height:18px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path> <path d="M21 21l-6 -6"></path></svg>
+            </a>
+            <a href="{{ nav.oplossingen }}" style="display:flex; align-items:center; gap:8px; font-size:14px; font-weight:500; padding:11px 20px; background:var(--tma-blue); color:#fff; border-radius:var(--tma-radius-sm); white-space:nowrap" style-hover="background:var(--tma-navy)" data-r="navlinks">Vind de juiste oplossing
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px; height:15px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <sc-if value="{{ mobileOpen }}" hint-placeholder-val="{{ false }}">
+          <nav id="mobiel-menu" aria-label="Mobiele navigatie" style="position:absolute; left:0; right:0; top:100%; margin-top:12px; background:var(--tma-surface); border-top:1px solid var(--tma-border); box-shadow:var(--tma-shadow-md); padding:clamp(16px,3vw,24px) var(--pad) clamp(24px,4vw,32px); display:flex; flex-direction:column; gap:4px">
+            <sc-for list="{{ menus }}" as="menu" hint-placeholder-count="5">
+              <a href="{{ menu.href }}" style="color:var(--tma-text); display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 0; border-bottom:1px solid var(--tma-divider); font-size:17px; font-weight:700; white-space:normal" style-hover="color:var(--tma-blue)">{{ menu.label }}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px; height:16px; flex:none; color:var(--tma-blue)"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+              </a>
+            </sc-for>
+            <div style="display:flex; flex-wrap:wrap; gap:12px 24px; padding-top:16px; font-size:14px; font-weight:500; color:var(--tma-text-secondary)">
+              <a href="{{ nav.contact }}" style="color:inherit" style-hover="color:var(--tma-blue)">Contact</a>
+              <a href="{{ nav.zoeken }}" style="color:inherit" style-hover="color:var(--tma-blue)">Zoeken</a>
+              <a href="{{ nav.opleiding }}" style="color:inherit" style-hover="color:var(--tma-blue)">Werken bij</a>
+              <a href="{{ nav.contact }}" style="color:inherit" style-hover="color:var(--tma-blue)">Inloggen</a>
+            </div>
+            <a href="{{ nav.oplossingen }}" style="margin-top:12px; display:flex; align-items:center; justify-content:center; gap:8px; font-size:15px; font-weight:500; padding:13px 22px; background:var(--tma-blue); color:#fff; border-radius:var(--tma-radius-sm)" style-hover="background:var(--tma-navy)">Vind de juiste oplossing
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px; height:15px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+            </a>
+          </nav>
+        </sc-if>
+
+        <!-- mega panel -->
+        <sc-if value="{{ isOpen }}" hint-placeholder-val="{{ false }}">
+          <div role="region" aria-label="{{ panelEyebrow }}" style="position:absolute; left:0; right:0; top:100%; margin-top:16px; background:var(--tma-surface); border-top:1px solid var(--tma-border); box-shadow:var(--tma-shadow-md)">
+            <div style="display:flex; flex-wrap:wrap; gap:clamp(28px,4vw,64px); padding:clamp(28px,4vw,48px) var(--pad)">
+              <div style="flex:1 1 260px; min-width:0; display:flex; flex-direction:column; gap:16px">
+                <div style="font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-text-secondary)">{{ panelEyebrow }}</div>
+                <div style="font-size:clamp(23px,2.2vw,30px); font-weight:700; line-height:1.1; color:var(--tma-text); white-space:normal">{{ panelTitle }}</div>
+                <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary); white-space:normal">{{ panelIntro }}</div>
+                <a href="{{ panelHref }}" style="font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px; margin-top:4px" style-hover="color:var(--tma-navy)">{{ panelCta }}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px; height:15px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+                </a>
+              </div>
+              <div style="flex:1 1 520px; min-width:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:32px 40px">
+                <sc-for list="{{ panelColumns }}" as="col" hint-placeholder-count="3">
+                  <div style="min-width:0; display:flex; flex-direction:column; gap:4px">
+                    <div style="font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-text-secondary); padding-bottom:12px; border-bottom:1px solid var(--tma-border); margin-bottom:8px">{{ col.title }}</div>
+                    <sc-for list="{{ col.items }}" as="item" hint-placeholder-count="4">
+                      <a href="{{ item.href }}" style="color:inherit; display:flex; flex-direction:column; gap:2px; padding:8px 12px; margin:0 -12px; border-radius:var(--tma-radius-md); white-space:normal" style-hover="background:var(--tma-blue-tint)">
+                        <div style="font-size:14px; font-weight:700; color:var(--tma-text)">{{ item.name }}</div>
+                        <div style="font-size:12px; line-height:1.5; color:var(--tma-text-muted)">{{ item.note }}</div>
+                      </a>
+                    </sc-for>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </sc-if>
+      </header>
+
+      <!-- annotations over the photo -->
+      <div data-r="anno" style="position:absolute; left:61%; top:230px; display:flex; align-items:center; white-space:nowrap">
+        <div style="width:9px; height:9px; border-radius:var(--tma-radius-pill); background:var(--tma-blue); box-shadow:0 0 0 5px rgba(33,131,250,.28); flex:none"></div>
+        <div style="width:60px; height:1px; background:rgba(255,255,255,.6)"></div>
+        <div style="background:rgba(5,0,56,.82); padding:10px 14px; border-radius:var(--tma-radius-sm)">
+          <div style="font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-blue-soft); margin-bottom:4px">Drijfveer 02</div>
+          <div style="font-size:14px; font-weight:700; color:#fff">Zelfredzaamheid · 9</div>
+        </div>
+      </div>
+      <div data-r="anno" style="position:absolute; left:60%; top:348px; display:flex; align-items:center; white-space:nowrap">
+        <div style="width:8px; height:8px; border-radius:var(--tma-radius-pill); background:#fff; flex:none"></div>
+        <div style="width:36px; height:1px; background:rgba(255,255,255,.6)"></div>
+        <div style="font-size:13px; font-weight:500; color:#fff">Talent voor zelfstandig werken</div>
+      </div>
+
+      <div style="margin-top:auto; padding:0 var(--pad) clamp(40px,5vw,64px); display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:clamp(24px,3vw,64px)">
+        <div style="flex:1 1 420px; min-width:0; display:flex; flex-direction:column; gap:24px; max-width:720px">
+          <div style="display:flex; align-items:center; gap:10px; font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-blue-soft)">
+            <span style="width:7px; height:7px; border-radius:var(--tma-radius-pill); background:var(--tma-dot-yellow); flex:none"></span>Talent Management Analyse
+          </div>
+          <h1 id="hero-titel" style="margin:0; font-size:clamp(32px,4.2vw,60px); font-weight:700; line-height:1.05; letter-spacing:-0.02em; color:#fff; text-wrap:balance">Alles gaat beter met een talentgerichte organisatie</h1>
+          <div style="font-size:clamp(15px,1.15vw,18px); line-height:1.5; color:rgba(255,255,255,.88); max-width:600px">Mensen zijn op hun best als ze zichzelf kunnen zijn — als ze werk doen dat van nature bij ze past. Zet je medewerkers in op hun sterke punten en dat levert betere prestaties, hogere motivatie en meer betrokkenheid op.</div>
+          <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px 16px">
+            <a href="{{ nav.oplossingen }}" style="font-size:15px; font-weight:500; padding:13px 22px; background:var(--tma-blue); color:#fff; border-radius:var(--tma-radius-sm); white-space:nowrap" style-hover="background:var(--tma-navy)">Vind de juiste oplossing</a>
+            <a href="{{ nav.filosofie }}" style="display:flex; align-items:center; gap:8px; font-size:15px; font-weight:500; padding:12px 22px; border:1px solid rgba(255,255,255,.35); border-radius:var(--tma-radius-sm); color:#fff; white-space:nowrap" style-hover="background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.7)">Onze filosofie toegelicht
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px; height:15px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+            </a>
+          </div>
+        </div>
+        <p style="margin:0; font-size:12px; line-height:1.5; color:rgba(255,255,255,.72); max-width:180px; border-top:1px solid rgba(255,255,255,.3); padding-top:12px; flex:none" data-r="hero-meta">Nienke, teamlead zorg.<br>Analyse afgenomen in 2024.</p>
+      </div>
+    </div>
+  </section>
+
+  <main id="hoofdinhoud">
+
+  <!-- ═══════════ ONZE BASIS ═══════════ -->
+  <section aria-labelledby="basis-titel" style="padding:clamp(56px,7vw,96px) var(--pad) clamp(52px,6vw,88px); background:var(--tma-canvas)">
+    <div style="display:flex; flex-wrap:wrap; gap:clamp(24px,4vw,64px); align-items:flex-start">
+      <div style="flex:1 1 320px; min-width:0; display:flex; flex-direction:column; gap:20px">
+        <div style="display:flex; align-items:center; gap:10px; font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-text-secondary)">
+          <span style="width:7px; height:7px; border-radius:var(--tma-radius-pill); background:var(--tma-dot-green); flex:none"></span>
+          <sc-if value="{{ numbers }}" hint-placeholder-val="{{ true }}"><span>01 —</span></sc-if>Onze basis
+        </div>
+        <h2 id="basis-titel" style="margin:0; font-size:clamp(26px,2.9vw,42px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; text-wrap:balance">Talentgericht werken en positieve aandacht</h2>
+      </div>
+      <div style="flex:1 1 420px; min-width:0; display:flex; flex-direction:column; gap:20px; padding-top:clamp(0px,2vw,32px)">
+        <div style="font-size:clamp(15px,1.15vw,18px); line-height:1.5; color:var(--tma-text-secondary); max-width:620px">De TMA filosofie bestaat 25 jaar. TMA staat voor Talent Motivatie Analyse en gaat ervan uit dat mensen het best functioneren en het meest betrokken zijn als ze werk doen dat dicht bij hun drijfveren en talenten ligt.</div>
+        <div style="font-size:15px; line-height:1.67; color:var(--tma-text-secondary); max-width:620px">Met onze wetenschappelijk onderbouwde aanpak geven we inzicht in drijfveren en talenten. Dat werkt voor mens én organisatie: TMA maakt zichtbaar waar potentie zit en waar aandacht nodig is. Daarmee bouw je aan een organisatie die presteert omdat mensen zichzelf mogen zijn.</div>
+      </div>
+    </div>
+
+    <!-- talent CTA, photographic -->
+    <div style="margin-top:64px; background:var(--tma-navy); border-radius:var(--tma-radius-2xl); overflow:hidden; display:flex; flex-wrap:wrap; align-items:stretch">
+      <div style="flex:1 1 440px; min-width:0; padding:clamp(28px,4vw,56px); display:flex; flex-direction:column; gap:24px; justify-content:center">
+        <h2 style="margin:0; font-size:clamp(26px,2.9vw,42px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; color:#fff; text-wrap:balance">Welke talenten heb jij?</h2>
+        <div style="font-size:15px; line-height:1.67; color:var(--tma-text-on-navy-muted); max-width:500px">Talenten hebben grote invloed op het gedrag van mensen en op hun ontwikkeling. Mensen presteren beter en zijn meer betrokken wanneer ze werken in overeenstemming met hun natuurlijke talenten. Benieuwd naar jouw talenten? Vraag de analyse kosteloos aan en zie direct hoe jouw organisatie succesvoller kan worden met TMA.</div>
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px">
+          <a href="{{ nav.detail }}" style="font-size:15px; font-weight:500; padding:13px 22px; background:var(--tma-blue); color:#fff; border-radius:var(--tma-radius-sm); white-space:nowrap" style-hover="background:var(--tma-navy)">Kosteloze talentanalyse aanvragen</a>
+          <a href="{{ nav.filosofie }}" style="font-size:15px; font-weight:500; padding:12px 22px; border:1px solid rgba(255,255,255,.35); color:#fff; border-radius:var(--tma-radius-sm); white-space:nowrap" style-hover="background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.7)">Lees meer over talenten</a>
+        </div>
+      </div>
+      <div style="flex:1 1 300px; position:relative; min-height:300px">
+        <img src="assets/photo-3.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover">
+        <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(5,0,56,.75) 0%, rgba(5,0,56,0) 48%)"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ KENNIS EN INSPIRATIE ═══════════ -->
+  <section aria-labelledby="kennis-titel" style="padding:clamp(52px,6vw,88px) var(--pad) clamp(56px,7vw,96px); background:var(--tma-surface); border-top:1px solid var(--tma-border)">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:clamp(24px,3vw,64px); margin-bottom:48px">
+      <div style="min-width:0; display:flex; flex-direction:column; gap:16px; max-width:600px">
+        <div style="display:flex; align-items:center; gap:10px; font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-text-secondary)">
+          <span style="width:7px; height:7px; border-radius:var(--tma-radius-pill); background:var(--tma-dot-pink); flex:none"></span>
+          <sc-if value="{{ numbers }}" hint-placeholder-val="{{ true }}"><span>02 —</span></sc-if>Kennis en inspiratie
+        </div>
+        <h2 id="kennis-titel" style="margin:0; font-size:clamp(26px,2.9vw,42px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; text-wrap:balance">Een community van échte TMA fans</h2>
+      </div>
+      <div style="min-width:0; display:flex; flex-direction:column; gap:12px; max-width:360px">
+        <div style="font-size:15px; line-height:1.5; color:var(--tma-text-secondary)">In de loop der jaren is er een energieke community ontstaan van gedreven professionals die de filosofie omarmen, trainingen geven en nieuwe tools ontwikkelen. Die kennis delen we graag.</div>
+        <a href="{{ nav.kennis }}" style="font-size:15px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px; white-space:nowrap" style-hover="color:var(--tma-navy)">Alle artikelen en nieuws
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px; height:15px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:24px; align-items:stretch">
+      <article style="min-width:0; display:flex; flex-direction:column; gap:16px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:200px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-kennis-1" shape="rect" placeholder="Klantfoto IND"></image-slot></div>
+        <div style="display:flex; align-items:center; gap:12px; min-height:24px"><span style="font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-blue); background:var(--tma-blue-tint); padding:4px 8px; border-radius:var(--tma-radius-xs)">Klantverhaal</span></div>
+        <h3 style="margin:0; font-size:19px; font-weight:700; line-height:1.15; text-wrap:pretty; min-height:66px">Hoe de IND met de TMA Methode werkt aan meer verbinding</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">Hoe houd je de neuzen dezelfde kant op als de dynamiek binnen een team verandert?</div>
+        <a href="{{ nav.artikel }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees het verhaal
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <article style="min-width:0; display:flex; flex-direction:column; gap:16px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:200px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-kennis-2" shape="rect" placeholder="Artikelbeeld"></image-slot></div>
+        <div style="display:flex; align-items:center; gap:12px; min-height:24px"><span style="font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-blue); background:var(--tma-blue-tint); padding:4px 8px; border-radius:var(--tma-radius-xs)">Artikel</span></div>
+        <h3 style="margin:0; font-size:19px; font-weight:700; line-height:1.15; text-wrap:pretty; min-height:66px">Balans tussen ziel en zakelijkheid</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">Binnen veel organisaties regeert nog altijd de traditionele functiebeschrijving: je bent wat je doet.</div>
+        <a href="{{ nav.artikel }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees het artikel
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <article style="min-width:0; display:flex; flex-direction:column; gap:16px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:200px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-kennis-3" shape="rect" placeholder="Nieuwsbeeld PRiMAN"></image-slot></div>
+        <div style="display:flex; align-items:center; gap:12px; min-height:24px"><span style="font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-blue); background:var(--tma-blue-tint); padding:4px 8px; border-radius:var(--tma-radius-xs)">Nieuws</span>
+          <time datetime="2026-05-26" style="font-size:12px; color:var(--tma-text-muted); font-variant-numeric:tabular-nums">26-05-2026</time>
+        </div>
+        <h3 style="margin:0; font-size:19px; font-weight:700; line-height:1.15; text-wrap:pretty; min-height:66px">TMA neemt PRiMAN volledig over en versterkt dienstverlening rondom talentmanagement</h3>
+        <a href="{{ nav.artikel }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees het nieuws
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <article style="min-width:0; display:flex; flex-direction:column; gap:16px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:200px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-kennis-4" shape="rect" placeholder="Nieuwsbeeld BrainsFirst"></image-slot></div>
+        <div style="display:flex; align-items:center; gap:12px; min-height:24px"><span style="font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-blue); background:var(--tma-blue-tint); padding:4px 8px; border-radius:var(--tma-radius-xs)">Nieuws</span>
+          <time datetime="2026-03-13" style="font-size:12px; color:var(--tma-text-muted); font-variant-numeric:tabular-nums">13-03-2026</time>
+        </div>
+        <h3 style="margin:0; font-size:19px; font-weight:700; line-height:1.15; text-wrap:pretty; min-height:66px">TMA completes second acquisition of 2026 with the add-on acquisition of BrainsFirst</h3>
+        <a href="{{ nav.artikel }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees het nieuws
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══════════ METHODE ═══════════ -->
+  <section aria-labelledby="methode-titel" style="padding:clamp(52px,6vw,88px) var(--pad) clamp(56px,7vw,96px); background:var(--tma-canvas)">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:clamp(24px,3vw,64px); margin-bottom:40px">
+      <div style="min-width:0; display:flex; flex-direction:column; gap:16px; max-width:620px">
+        <div style="display:flex; align-items:center; gap:10px; font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-text-secondary)">
+          <span style="width:7px; height:7px; border-radius:var(--tma-radius-pill); background:var(--tma-dot-teal); flex:none"></span>
+          <sc-if value="{{ numbers }}" hint-placeholder-val="{{ true }}"><span>03 —</span></sc-if>Methode
+        </div>
+        <h2 id="methode-titel" style="margin:0; font-size:clamp(26px,2.9vw,42px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; text-wrap:balance">Voor wie werkt de methode?</h2>
+      </div>
+      <a href="{{ nav.filosofie }}" style="font-size:15px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px; white-space:nowrap; padding-bottom:8px" style-hover="color:var(--tma-navy)">Bekijk de volledige methode
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px; height:15px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+      </a>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:24px; align-items:stretch">
+      <article style="min-width:0; display:flex; flex-direction:column; gap:14px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:180px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-methode-1" shape="rect" placeholder="HR-team in gesprek"></image-slot></div>
+        <h3 style="margin:0; font-size:21px; font-weight:700; line-height:1.1; min-height:48px; text-wrap:pretty">HR</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">HR in een talentgerichte organisatie ziet mensen als unieke individuen. Elk met hun eigen drijfveren en ontwikkelpad.</div>
+        <a href="{{ nav.oplossingen }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees meer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <article style="min-width:0; display:flex; flex-direction:column; gap:14px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:180px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-methode-2" shape="rect" placeholder="Werkvloer"></image-slot></div>
+        <h3 style="margin:0; font-size:21px; font-weight:700; line-height:1.1; min-height:48px; text-wrap:pretty">Organisaties</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">Mensen zijn op hun best, leren het snelst en zijn meer betrokken als ze werk doen dat past bij hun natuurlijke talenten.</div>
+        <a href="{{ nav.oplossingen }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees meer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <article style="min-width:0; display:flex; flex-direction:column; gap:14px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:180px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-methode-3" shape="rect" placeholder="Leidinggevende"></image-slot></div>
+        <h3 style="margin:0; font-size:21px; font-weight:700; line-height:1.1; min-height:48px; text-wrap:pretty">Talentgericht leiderschap</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">Een belangrijke taak van leidinggevenden is het geven van aandacht aan de mensen in je team — gericht op wat ze kunnen.</div>
+        <a href="{{ nav.oplossingen }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees meer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <article style="min-width:0; display:flex; flex-direction:column; gap:14px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:180px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-methode-4" shape="rect" placeholder="Teamoverleg"></image-slot></div>
+        <h3 style="margin:0; font-size:21px; font-weight:700; line-height:1.1; min-height:48px; text-wrap:pretty">Team ontwikkeling</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">Door inzicht te krijgen in de dynamiek binnen een groep en in individuele talenten en drijfveren wordt samenwerking concreet.</div>
+        <a href="{{ nav.oplossingen }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees meer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══════════ QUOTE ═══════════ -->
+  <section aria-label="Uit de praktijk" style="display:flex; flex-wrap:wrap; background:var(--tma-surface); border-top:1px solid var(--tma-border)">
+    <div style="flex:1 1 340px; position:relative; min-height:340px; overflow:hidden">
+      <img src="assets/photo-4.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover">
+    </div>
+    <div style="flex:1 1 480px; min-width:0; padding:clamp(48px,6vw,88px) clamp(24px,4vw,64px); display:flex; flex-direction:column; gap:clamp(20px,2.5vw,32px); justify-content:center">
+      <div style="display:flex; align-items:center; gap:10px; font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-text-secondary)">
+        <span style="width:7px; height:7px; border-radius:var(--tma-radius-pill); background:var(--tma-dot-orange); flex:none"></span>
+        <sc-if value="{{ numbers }}" hint-placeholder-val="{{ true }}"><span>04 —</span></sc-if>Uit de praktijk
+      </div>
+      <blockquote style="margin:0; font-size:clamp(21px,2.1vw,31px); font-weight:500; line-height:1.35; color:var(--tma-text); text-wrap:pretty">“We hadden van iedereen een rapport. Wat we niet hadden was een gesprek dat ergens over ging.”</blockquote>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px">
+        <div style="width:44px; height:44px; border-radius:var(--tma-radius-pill); background:var(--tma-blue-tint); display:flex; align-items:center; justify-content:center; color:var(--tma-blue-soft); flex:none">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:22px; height:22px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path> <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path></svg>
+        </div>
+        <div style="min-width:0; display:flex; flex-direction:column; gap:2px">
+          <div style="font-size:14px; font-weight:700">Naam, functie</div>
+          <div style="font-size:13px; color:var(--tma-text-muted)">Organisatie · echte quote nog aan te leveren</div>
+        </div>
+      </div>
+      <div style="height:1px; background:var(--tma-divider)"></div>
+      <div style="font-size:clamp(15px,1.15vw,18px); line-height:1.5; color:var(--tma-text-secondary); max-width:520px">Meten is het makkelijke deel. De winst zit in wat er daarna gebeurt: dat een leidinggevende weet welk gesprek te voeren, dat een team begrijpt waarom het schuurt, dat een vacature bij een mens past in plaats van omgekeerd.</div>
+    </div>
+  </section>
+
+  <!-- ═══════════ TALENTONTWIKKELING (navy) ═══════════ -->
+  <section data-on-navy aria-labelledby="schaal-titel" style="background:var(--tma-navy); padding:clamp(56px,7vw,96px) var(--pad)">
+    <div style="display:flex; flex-wrap:wrap; gap:clamp(32px,5vw,72px); align-items:center">
+      <div style="flex:0 1 380px; width:100%; max-width:380px; margin-inline:auto; aspect-ratio:1/1; border-radius:var(--tma-radius-pill); overflow:hidden; background:var(--tma-blue-tint)"><image-slot style="min-width:0" id="hp2-talent-portret" shape="circle" placeholder="Portret medewerker"></image-slot></div>
+      <div style="flex:1 1 340px; min-width:0; display:flex; flex-direction:column; gap:24px">
+        <div style="display:flex; align-items:center; gap:10px; font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-blue)">
+          <span style="width:7px; height:7px; border-radius:var(--tma-radius-pill); background:var(--tma-dot-blue); flex:none"></span>
+          <sc-if value="{{ numbers }}" hint-placeholder-val="{{ true }}"><span>05 —</span></sc-if>Talentontwikkeling in jouw organisatie
+        </div>
+        <h2 id="schaal-titel" style="margin:0; font-size:clamp(29px,3.4vw,50px); font-weight:700; line-height:1.1; letter-spacing:-0.015em; color:#fff; text-wrap:balance">Jaarlijks verbinden we duizenden organisaties met de talenten van meer dan 500.000 mensen</h2>
+        <div style="font-size:15px; line-height:1.67; color:var(--tma-text-on-navy-muted); max-width:580px">Dat doen we ook graag voor jouw organisatie. We geven je medewerkers inzicht in hun talenten en praktische adviezen over hoe ze hun werk beter kunnen doen. Je managers krijgen handvatten om teams talentgericht te sturen. En HR adviseert de boardroom met inzicht in de potentie van de organisatie.</div>
+        <div style="display:flex; flex-wrap:wrap; gap:24px 48px; padding-top:16px; border-top:1px solid rgba(255,255,255,.15)">
+          <div style="min-width:0; display:flex; flex-direction:column; gap:4px"><div style="font-size:29px; font-weight:700; color:#fff; font-variant-numeric:tabular-nums">500.000+</div><div style="font-size:13px; color:var(--tma-text-on-navy-muted)">mensen geanalyseerd</div></div>
+          <div style="min-width:0; display:flex; flex-direction:column; gap:4px"><div style="font-size:29px; font-weight:700; color:#fff; font-variant-numeric:tabular-nums">25</div><div style="font-size:13px; color:var(--tma-text-on-navy-muted)">jaar TMA filosofie</div></div>
+          <div style="min-width:0; display:flex; flex-direction:column; gap:4px"><div style="font-size:29px; font-weight:700; color:#fff; font-variant-numeric:tabular-nums">22</div><div style="font-size:13px; color:var(--tma-text-on-navy-muted)">drijfveren gemeten</div></div>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px 16px; padding-top:8px">
+          <a href="{{ nav.filosofie }}" style="font-size:15px; font-weight:500; padding:13px 22px; background:var(--tma-blue); color:#fff; border-radius:var(--tma-radius-sm); white-space:nowrap" style-hover="background:var(--tma-navy)">Bekijk de methode van TMA</a>
+          <a href="{{ nav.contact }}" style="display:flex; align-items:center; gap:8px; font-size:15px; font-weight:500; padding:12px 22px; border:1px solid rgba(255,255,255,.35); border-radius:var(--tma-radius-sm); color:#fff; white-space:nowrap" style-hover="background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.7)">Praat met een expert
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px; height:15px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SECTOREN ═══════════ -->
+  <section aria-labelledby="sectoren-titel" style="padding:clamp(52px,6vw,88px) var(--pad) clamp(56px,7vw,96px); background:var(--tma-canvas)">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:clamp(24px,3vw,64px); margin-bottom:48px">
+      <div style="min-width:0; display:flex; flex-direction:column; gap:16px; max-width:580px">
+        <div style="display:flex; align-items:center; gap:10px; font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-text-secondary)">
+          <span style="width:7px; height:7px; border-radius:var(--tma-radius-pill); background:var(--tma-dot-sky); flex:none"></span>
+          <sc-if value="{{ numbers }}" hint-placeholder-val="{{ true }}"><span>06 —</span></sc-if>Overzicht sectoren
+        </div>
+        <h2 id="sectoren-titel" style="margin:0; font-size:clamp(26px,2.9vw,42px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; text-wrap:balance">Talent ziet in elke sector anders uit</h2>
+      </div>
+      <div style="font-size:15px; line-height:1.5; color:var(--tma-text-secondary); max-width:360px">Dezelfde methode, andere vragen. Kies je sector en zie welke toepassingen en tools daar het meest opleveren.</div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:24px; align-items:stretch">
+      <article style="min-width:0; display:flex; flex-direction:column; gap:14px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:240px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-sector-1" shape="rect" placeholder="Bedrijfsleven"></image-slot></div>
+        <h3 style="margin:0; font-size:clamp(21px,1.7vw,25px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; min-height:56px; text-wrap:pretty">TMA voor bedrijfsleven</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">Binnen de zakelijke dienstverlening en industrie is de vraag naar performance groter dan ooit. TMA gelooft dat de ontwikkeling van medewerkers de motor is voor de groei van je bedrijf.</div>
+        <a href="{{ nav.sector }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees meer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <article style="min-width:0; display:flex; flex-direction:column; gap:14px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:240px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-sector-2" shape="rect" placeholder="Overheid"></image-slot></div>
+        <h3 style="margin:0; font-size:clamp(21px,1.7vw,25px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; min-height:56px; text-wrap:pretty">TMA voor de overheid</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">Wat voor de hele samenleving geldt, geldt zeker ook voor de overheid: er moet meer werk worden gedaan met minder mensen. Persoonlijk leiderschap en samenwerken zijn daarbij belangrijke thema's.</div>
+        <a href="{{ nav.sector }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees meer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <article style="min-width:0; display:flex; flex-direction:column; gap:14px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:240px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-sector-3" shape="rect" placeholder="Onderwijs"></image-slot></div>
+        <h3 style="margin:0; font-size:clamp(21px,1.7vw,25px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; min-height:56px; text-wrap:pretty">TMA voor het onderwijs</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">Inzicht in je toekomst en begrijpen hoe je meer uit je studie haalt. Dat wensen we elke student toe. Met de module Talentontwikkeling krijgen studenten inzicht in hun talenten.</div>
+        <a href="{{ nav.sector }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees meer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <article style="min-width:0; display:flex; flex-direction:column; gap:14px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:240px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-sector-4" shape="rect" placeholder="Zorg"></image-slot></div>
+        <h3 style="margin:0; font-size:clamp(21px,1.7vw,25px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; min-height:56px; text-wrap:pretty">TMA voor de zorg</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">In de zorg is de noodzaak groter dan ooit om medewerkers oprechte aandacht te geven, oog te hebben voor hun persoonlijke ontwikkeling en de tijd voor cliënt of patiënt te maximaliseren.</div>
+        <a href="{{ nav.sector }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees meer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <article style="min-width:0; display:flex; flex-direction:column; gap:14px; background:var(--tma-surface); border:0.5px solid var(--tma-border); border-radius:var(--tma-radius-xl); padding:20px" style-hover="border-color:var(--tma-blue)">
+        <div style="min-width:0; position:relative; height:240px; border-radius:var(--tma-radius-lg); overflow:hidden"><image-slot style="min-width:0" id="hp2-sector-5" shape="rect" placeholder="Coaching"></image-slot></div>
+        <h3 style="margin:0; font-size:clamp(21px,1.7vw,25px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; min-height:56px; text-wrap:pretty">TMA voor coaching</h3>
+        <div style="font-size:14px; line-height:1.5; color:var(--tma-text-secondary)">Nederland barst van de getalenteerde coaches die zich inzetten om anderen te begeleiden op hun reis naar persoonlijke groei en succes. Hoe onderscheid jij je te midden van dat aanbod?</div>
+        <a href="{{ nav.sector }}" style="margin-top:auto; padding-top:8px; font-size:14px; font-weight:500; color:var(--tma-blue); display:flex; align-items:center; gap:8px" style-hover="color:var(--tma-navy)">Lees meer
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px; height:14px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+        </a>
+      </article>
+      <div style="min-width:0; display:flex; flex-direction:column; justify-content:center; gap:16px; background:var(--tma-blue-tint); border-radius:var(--tma-radius-xl); padding:32px">
+        <div style="font-size:clamp(15px,1.15vw,18px); line-height:1.5; color:var(--tma-text-secondary)">Staat jouw sector er niet bij? De methode werkt overal waar mensen samenwerken.</div>
+        <div style="display:flex; flex-direction:column">
+          <a href="{{ nav.sector }}" style="color:inherit; display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px 0; border-top:1px solid var(--tma-border); font-size:15px; font-weight:700" style-hover="color:var(--tma-blue)">Alle sectoren
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px; height:15px; flex:none; color:var(--tma-blue)"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+          </a>
+          <a href="{{ nav.contact }}" style="color:inherit; display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px 0; border-top:1px solid var(--tma-border); border-bottom:1px solid var(--tma-border); font-size:15px; font-weight:700" style-hover="color:var(--tma-blue)">Praat met een expert
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px; height:15px; flex:none; color:var(--tma-blue)"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M5 12l14 0"></path> <path d="M13 18l6 -6"></path> <path d="M13 6l6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MEER WETEN + PROFESSIONAL ═══════════ -->
+  <section aria-labelledby="boek-titel" style="padding:clamp(52px,6vw,88px) var(--pad) clamp(56px,7vw,96px); background:var(--tma-surface); border-top:1px solid var(--tma-border); display:flex; flex-direction:column; gap:40px">
+    <div style="display:flex; flex-wrap:wrap; gap:clamp(28px,4vw,64px); align-items:center">
+      <div style="flex:0 1 300px; width:100%; max-width:300px; margin-inline:auto; aspect-ratio:1/1; border-radius:var(--tma-radius-pill); overflow:hidden"><image-slot style="min-width:0" id="hp2-boek" shape="circle" placeholder="Portret met praktijkboek"></image-slot></div>
+      <div style="flex:1 1 330px; min-width:0; display:flex; flex-direction:column; gap:20px">
+        <div style="display:flex; align-items:center; gap:10px; font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-text-secondary)">
+          <span style="width:7px; height:7px; border-radius:var(--tma-radius-pill); background:var(--tma-dot-yellow); flex:none"></span>
+          <sc-if value="{{ numbers }}" hint-placeholder-val="{{ true }}"><span>07 —</span></sc-if>Meer weten?
+        </div>
+        <h2 id="boek-titel" style="margin:0; font-size:clamp(26px,2.9vw,42px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; text-wrap:balance">Het complete TMA praktijkboek, kosteloos</h2>
+        <div style="font-size:15px; line-height:1.67; color:var(--tma-text-secondary); max-width:500px">Download het als pdf of vraag een gratis exemplaar aan — inclusief de volledige methode, de 22 drijfveren en praktijkvoorbeelden uit organisaties als de jouwe.</div>
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px">
+          <a href="{{ nav.kennis }}" style="display:flex; align-items:center; gap:8px; font-size:15px; font-weight:500; padding:13px 22px; background:var(--tma-blue); color:#fff; border-radius:var(--tma-radius-sm); white-space:nowrap" style-hover="background:var(--tma-navy)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px; height:16px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path> <path d="M7 11l5 5l5 -5"></path> <path d="M12 4l0 12"></path></svg>Download ons boek
+          </a>
+          <a href="{{ nav.contact }}" style="color:inherit; font-size:15px; font-weight:500; padding:12px 22px; border:1px solid var(--tma-border-input); border-radius:var(--tma-radius-sm); white-space:nowrap" style-hover="background:var(--tma-blue-tint); border-color:var(--tma-blue)">Exemplaar aanvragen</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="position:relative; border-radius:var(--tma-radius-2xl); overflow:hidden; min-height:340px; display:flex">
+      <div style="position:absolute; inset:0; background:var(--tma-blue-tint)"><image-slot style="min-width:0" id="hp2-opleiding" shape="rect" placeholder="Foto certificeringstraining"></image-slot></div>
+      <div style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(5,0,56,.92) 0%, rgba(5,0,56,.74) 52%, rgba(5,0,56,.32) 100%); pointer-events:none"></div>
+      <div style="position:relative; padding:clamp(28px,4vw,56px); display:flex; flex-direction:column; gap:20px; justify-content:center; max-width:720px; min-width:0">
+        <div style="display:flex; align-items:center; gap:10px; font-size:10px; font-weight:700; letter-spacing:.02em; text-transform:uppercase; color:var(--tma-blue)">
+          <span style="width:7px; height:7px; border-radius:var(--tma-radius-pill); background:var(--tma-dot-green); flex:none"></span>
+          <sc-if value="{{ numbers }}" hint-placeholder-val="{{ true }}"><span>08 —</span></sc-if>Opleiding
+        </div>
+        <h2 style="margin:0; font-size:clamp(26px,2.9vw,42px); font-weight:700; line-height:1.1; letter-spacing:-0.01em; color:#fff; text-wrap:balance">Word een gecertificeerde TMA Professional</h2>
+        <div style="font-size:15px; line-height:1.67; color:var(--tma-text-on-navy-muted); max-width:600px">Wil je de TMA Methode volledig beheersen en inzetten voor individuele trajecten zoals coaching, loopbaanbegeleiding en werving &amp; selectie? Meld je aan voor onze certificeringstraining en draag de filosofie uit met vertrouwen en expertise.</div>
+        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:12px">
+          <div style="display:flex; align-items:center; gap:8px; font-size:15px; font-weight:500; padding:13px 22px; background:var(--tma-blue); color:#fff; border-radius:var(--tma-radius-sm); white-space:nowrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px; height:16px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12"></path> <path d="M16 3v4"></path> <path d="M8 3v4"></path> <path d="M4 11h16"></path> <path d="M11 15h1"></path> <path d="M12 15v3"></path></svg>Maak een afspraak
+          </div>
+          <a href="{{ nav.opleiding }}" style="font-size:15px; font-weight:500; padding:12px 22px; border:1px solid rgba(255,255,255,.35); color:#fff; border-radius:var(--tma-radius-sm); white-space:nowrap" style-hover="background:rgba(255,255,255,.12); border-color:rgba(255,255,255,.7)">TMA professional worden</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer data-on-navy style="background:var(--tma-navy); padding:clamp(48px,6vw,72px) var(--pad) 32px">
+    <div style="display:flex; flex-wrap:wrap; gap:clamp(28px,3vw,56px); padding-bottom:48px; border-bottom:1px solid rgba(255,255,255,.15)">
+      <div style="flex:1 1 280px; min-width:0; display:flex; flex-direction:column; gap:20px">
+        <img src="assets/logo/tma-tagline-reversed.svg" alt="TMA — from talent to performance" style="height:40px; width:auto; max-width:100%; display:block; align-self:flex-start">
+        <div style="font-size:13px; line-height:1.67; color:var(--tma-text-on-navy-muted); max-width:300px">TMA richt zich op het identificeren, ontwikkelen en benutten van individuele talenten en drijfveren én op de invoering van talentgerichte organisaties. Zo helpen we medewerkers hun volledig potentieel te benutten en organisaties zich te ontwikkelen.</div>
+        <div style="display:flex; gap:8px">
+          <div style="width:36px; height:36px; border-radius:var(--tma-radius-sm); border:1px solid rgba(255,255,255,.22); display:flex; align-items:center; justify-content:center; color:#fff">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:18px; height:18px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M8 11v5"></path> <path d="M8 8v.01"></path> <path d="M12 16v-5"></path> <path d="M16 16v-3a2 2 0 1 0 -4 0"></path> <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"></path></svg>
+          </div>
+          <div style="width:36px; height:36px; border-radius:var(--tma-radius-sm); border:1px solid rgba(255,255,255,.22); display:flex; align-items:center; justify-content:center; color:#fff">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:18px; height:18px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8"></path> <path d="M10 9l5 3l-5 3l0 -6"></path></svg>
+          </div>
+        </div>
+      </div>
+      <div style="flex:0 1 150px; min-width:0; display:flex; flex-direction:column; gap:12px">
+        <div style="font-size:14px; font-weight:700; color:#fff; margin-bottom:4px">Snel naar…</div>
+        <a href="{{ nav.opleiding }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">TMA Trainingen</a>
+        <a href="{{ nav.oplossingen }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">TMA Oplossingen</a>
+        <a href="{{ nav.opleiding }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">TMA Academy</a>
+        <a href="{{ nav.filosofie }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">TMA Research</a>
+        <a href="{{ nav.oplossingen }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">TMA Materialen</a>
+      </div>
+      <div style="flex:0 1 150px; min-width:0; display:flex; flex-direction:column; gap:12px">
+        <div style="font-size:14px; font-weight:700; color:#fff; margin-bottom:4px">Sectoren</div>
+        <a href="{{ nav.sector }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">Bedrijfsleven</a>
+        <a href="{{ nav.sector }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">Overheid</a>
+        <a href="{{ nav.sector }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">Onderwijs</a>
+        <a href="{{ nav.sector }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">Zorg</a>
+        <a href="{{ nav.sector }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">Coaching</a>
+      </div>
+      <div style="flex:0 1 150px; min-width:0; display:flex; flex-direction:column; gap:12px">
+        <div style="font-size:14px; font-weight:700; color:#fff; margin-bottom:4px">Organisatie</div>
+        <a href="{{ nav.filosofie }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">Filosofie</a>
+        <a href="{{ nav.filosofie }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">Methode</a>
+        <a href="{{ nav.oplossingen }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">Oplossingen</a>
+        <div style="font-size:13px; color:var(--tma-text-on-navy-muted)">Partners</div>
+        <div style="font-size:13px; color:var(--tma-text-on-navy-muted)">Games</div>
+        <a href="{{ nav.contact }}" style="font-size:13px; color:var(--tma-text-on-navy-muted)" style-hover="color:#fff">Contact</a>
+        <div style="font-size:13px; color:var(--tma-text-on-navy-muted)">Werken bij</div>
+      </div>
+      <sc-if value="{{ newsletter }}" hint-placeholder-val="{{ true }}">
+        <div style="flex:1 1 250px; min-width:0; display:flex; flex-direction:column; gap:16px">
+          <div style="font-size:14px; font-weight:700; color:#fff">Blijf op de hoogte via onze nieuwsbrief</div>
+          <div style="font-size:13px; line-height:1.5; color:var(--tma-text-on-navy-muted)">Blijf op de hoogte van de nieuwste ontwikkelingen en laat je inspireren door de TMA maand-update.</div>
+          <div style="display:flex; flex-wrap:wrap; gap:8px">
+            <div style="flex:1 1 140px; min-width:0; display:flex; align-items:center; gap:8px; font-size:13px; padding:11px 14px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.22); border-radius:var(--tma-radius-sm); color:rgba(255,255,255,.55)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px; height:16px; flex:none"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path> <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"></path> <path d="M3 7l9 6l9 -6"></path></svg>jouw@e-mail.nl
+            </div>
+            <div style="font-size:14px; font-weight:500; padding:11px 20px; background:var(--tma-blue); color:#fff; border-radius:var(--tma-radius-sm); white-space:nowrap">Aanmelden</div>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:12px 24px; justify-content:space-between; padding-top:24px; font-size:12px; color:rgba(185,207,226,.7)">
+      <div>© 2026 TMA · Unieke talenten vinden en benutten</div>
+      <div style="display:flex; gap:24px"><a href="{{ nav.contact }}" style="color:inherit" style-hover="color:#fff">ICT infrastructuur</a><a href="{{ nav.contact }}" style="color:inherit" style-hover="color:#fff">Privacy statement</a><a href="{{ nav.contact }}" style="color:inherit" style-hover="color:#fff">Algemene voorwaarden</a></div>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSectionNumbers&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;},&quot;showNewsletter&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Layout&quot;}}">
+class Component extends DCLogic {
+  state = { open: null, mobile: false };
+
+  static url(k) { return 'TMA Templates.dc.html#' + k; }
+
+  static ITEM_TARGET = {
+    'Talentenanalyse': 'detail', 'Competentieanalyse': 'detail', 'Teamanalyse': 'detail', '360° feedback': 'detail',
+    'Ontwikkeling & coaching': 'oplossingen', 'Werving & selectie': 'oplossingen', 'Teamontwikkeling': 'oplossingen',
+    'Talentgericht leiderschap': 'oplossingen', 'Loopbaan & mobiliteit': 'oplossingen',
+    'TMA Portal': 'oplossingen', 'TMA Games': 'oplossingen', 'Materialen': 'oplossingen', 'Integraties': 'oplossingen',
+    'Zorg': 'sector', 'Overheid': 'sector', 'Onderwijs': 'sector', 'Bedrijfsleven': 'sector',
+    'Zakelijke dienstverlening': 'sector', 'Industrie & techniek': 'sector',
+    'Coaches': 'sector', 'Recruiters': 'sector', 'HR-adviseurs': 'sector',
+    'Artikelen': 'kennis', 'Klantverhalen': 'kennis', 'Nieuws': 'kennis', 'Whitepapers': 'kennis',
+    'Webinars': 'kennis', 'Het praktijkboek': 'kennis', 'Kosteloze talentanalyse': 'detail',
+    'Demo aanvragen': 'contact', 'Maak een afspraak': 'contact',
+    'TMA Professional': 'opleiding', 'Vervolgmodules': 'opleiding', 'Hercertificering': 'opleiding',
+    'Trainingen': 'opleiding', 'Events & kalender': 'opleiding',
+    'Partner worden': 'opleiding', 'TMA Community': 'opleiding', 'TMA World': 'opleiding'
+  };
+
+  static MENU_TARGET = { filosofie: 'filosofie', oplossingen: 'oplossingen', sectoren: 'sector', kennis: 'kennis', opleiding: 'opleiding' };
+
+  static PANELS = {
+    filosofie: {
+      eyebrow: 'Filosofie & methode',
+      title: 'Waar TMA vandaan komt',
+      intro: '25 jaar onderzoek naar wat mensen van nature drijft — en hoe je daar in een organisatie iets mee doet.',
+      cta: 'Onze filosofie toegelicht',
+      columns: [
+        { title: 'Het fundament', items: [
+          { name: 'De TMA filosofie', note: 'Happy people, performing organizations' },
+          { name: 'De TMA Methode', note: 'Van drijfveer naar gedrag' },
+          { name: '22 drijfveren', note: 'Wat mensen van nature motiveert' }
+        ]},
+        { title: 'Het model', items: [
+          { name: 'Talenten', note: 'Wat iemand van nature makkelijk afgaat' },
+          { name: 'Competenties', note: 'Ontwikkelbaar — of juist niet' },
+          { name: 'Teamdynamiek', note: 'Hoe drijfveren samen uitpakken' }
+        ]},
+        { title: 'Onderbouwing', items: [
+          { name: 'Wetenschap & validatie', note: 'Onderzoek en betrouwbaarheid' },
+          { name: 'TMA Research', note: 'Publicaties en normgroepen' },
+          { name: 'Het praktijkboek', note: 'De volledige methode, kosteloos' }
+        ]}
+      ]
+    },
+    oplossingen: {
+      eyebrow: 'Oplossingen',
+      title: 'Wat wil je bereiken?',
+      intro: 'Kies op doel, op analyse of op tool — alles bouwt op dezelfde meting, dus je kunt later altijd uitbreiden.',
+      cta: 'Vind de juiste oplossing',
+      columns: [
+        { title: 'Per doel', items: [
+          { name: 'Ontwikkeling & coaching', note: 'Van rapport naar ontwikkelplan' },
+          { name: 'Werving & selectie', note: 'Match op drijfveren' },
+          { name: 'Teamontwikkeling', note: 'Zichtbaar waarom het schuurt' },
+          { name: 'Talentgericht leiderschap', note: 'Handvatten voor managers' },
+          { name: 'Loopbaan & mobiliteit', note: 'Richting voor de volgende stap' }
+        ]},
+        { title: 'Analyses', items: [
+          { name: 'Talentenanalyse', note: 'De basismeting, 22 drijfveren' },
+          { name: 'Competentieanalyse', note: 'Ontwikkelbaarheid per competentie' },
+          { name: 'Teamanalyse', note: 'Samenstelling en dynamiek' },
+          { name: '360° feedback', note: 'Beeld van de omgeving' }
+        ]},
+        { title: 'Platform & tools', items: [
+          { name: 'TMA Portal', note: 'Analyses, rapportages, dashboards' },
+          { name: 'TMA Games', note: 'Talent spelenderwijs verkennen' },
+          { name: 'Materialen', note: 'Kaartsets, werkvormen, canvassen' },
+          { name: 'Integraties', note: 'Koppeling met je HR-systeem' }
+        ]}
+      ]
+    },
+    sectoren: {
+      eyebrow: 'Sectoren',
+      title: 'Talent ziet in elke sector anders uit',
+      intro: 'Dezelfde methode, andere vragen. Kies je sector en zie welke toepassingen daar het meest opleveren.',
+      cta: 'Alle sectoren',
+      columns: [
+        { title: 'Publiek', items: [
+          { name: 'Overheid', note: 'Meer werk met minder mensen' },
+          { name: 'Onderwijs', note: 'Studenten inzicht in hun talent' },
+          { name: 'Zorg', note: 'Tijd en aandacht maximaliseren' }
+        ]},
+        { title: 'Markt', items: [
+          { name: 'Bedrijfsleven', note: 'Ontwikkeling als motor voor groei' },
+          { name: 'Zakelijke dienstverlening', note: 'Performance en betrokkenheid' },
+          { name: 'Industrie & techniek', note: 'Vakmanschap vasthouden' }
+        ]},
+        { title: 'Professionals', items: [
+          { name: 'Coaches', note: 'Onderscheid je met TMA' },
+          { name: 'Recruiters', note: 'Objectiever selecteren' },
+          { name: 'HR-adviseurs', note: 'De boardroom onderbouwd adviseren' }
+        ]}
+      ]
+    },
+    kennis: {
+      eyebrow: 'Kennis & inspiratie',
+      title: 'Wat de community deelt',
+      intro: 'Artikelen, klantverhalen en nieuws van gedreven professionals die de filosofie dagelijks toepassen.',
+      cta: 'Alle artikelen en nieuws',
+      columns: [
+        { title: 'Lezen', items: [
+          { name: 'Artikelen', note: 'Achtergrond en praktijk' },
+          { name: 'Klantverhalen', note: 'Hoe anderen het aanpakken' },
+          { name: 'Nieuws', note: 'Laatste ontwikkelingen' }
+        ]},
+        { title: 'Gebruiken', items: [
+          { name: 'Het praktijkboek', note: 'Download of vraag een exemplaar aan' },
+          { name: 'Whitepapers', note: 'Diepgang per thema' },
+          { name: 'Webinars', note: 'Terugkijken wanneer je wilt' }
+        ]},
+        { title: 'Zelf ervaren', items: [
+          { name: 'Kosteloze talentanalyse', note: 'Ontdek je eigen talenten' },
+          { name: 'TMA Games', note: 'Speels startpunt voor teams' },
+          { name: 'Demo aanvragen', note: 'Het platform van binnen' }
+        ]}
+      ]
+    },
+    opleiding: {
+      eyebrow: 'Opleiding & events',
+      title: 'Word TMA Professional',
+      intro: 'Beheers de methode volledig en zet haar in voor coaching, loopbaanbegeleiding en werving & selectie.',
+      cta: 'TMA professional worden',
+      columns: [
+        { title: 'Certificering', items: [
+          { name: 'TMA Professional', note: 'De volledige certificeringstraining' },
+          { name: 'Vervolgmodules', note: 'Teams, leiderschap, selectie' },
+          { name: 'Hercertificering', note: 'Bijblijven en bijscholen' }
+        ]},
+        { title: 'Agenda', items: [
+          { name: 'Trainingen', note: 'Data en locaties' },
+          { name: 'Events & kalender', note: 'Wat er dit jaar op staat' },
+          { name: 'Maak een afspraak', note: 'Persoonlijk kennismaken' }
+        ]},
+        { title: 'Netwerk', items: [
+          { name: 'Partner worden', note: 'Samen TMA in de markt zetten' },
+          { name: 'TMA Community', note: 'Kennis delen met vakgenoten' },
+          { name: 'TMA World', note: 'Internationale partners' }
+        ]}
+      ]
+    }
+  };
+
+  renderVals() {
+    const open = this.state.open;
+    const P = Component.PANELS;
+    const menus = [
+      ['filosofie', 'Filosofie & methode'],
+      ['oplossingen', 'Oplossingen'],
+      ['sectoren', 'Sectoren'],
+      ['kennis', 'Kennis & inspiratie'],
+      ['opleiding', 'Opleiding & events']
+    ].map(([key, label]) => ({
+      label,
+      href: Component.url(Component.MENU_TARGET[key] || key),
+      open: () => this.setState({ open: key }),
+      expanded: open === key ? 'true' : 'false',
+      color: open === key ? 'var(--tma-blue-soft)' : '#fff',
+      underline: open === key ? 'var(--tma-blue)' : 'transparent'
+    }));
+    const p = open ? P[open] : null;
+    const panelDefault = p ? (Component.MENU_TARGET[open] || 'oplossingen') : 'oplossingen';
+    const panelColumns = p ? p.columns.map(col => ({
+      title: col.title,
+      items: col.items.map(it => ({ ...it, href: Component.url(Component.ITEM_TARGET[it.name] || panelDefault) }))
+    })) : [];
+    const nav = {};
+    for (const key of ['filosofie', 'oplossingen', 'detail', 'sector', 'kennis', 'artikel', 'opleiding', 'contact', 'zoeken']) {
+      nav[key] = Component.url(key);
+    }
+    const mobile = this.state.mobile;
+    return {
+      menus,
+      isOpen: !!p,
+      numbers: this.props.showSectionNumbers ?? true,
+      newsletter: this.props.showNewsletter ?? true,
+      closeMenu: () => this.setState({ open: null }),
+      toggleMobile: () => this.setState(prev => ({ mobile: !prev.mobile, open: null })),
+      mobileOpen: mobile,
+      mobileClosed: !mobile,
+      mobileExpanded: mobile ? 'true' : 'false',
+      mobileLabel: mobile ? 'Menu sluiten' : 'Menu openen',
+      panelEyebrow: p ? p.eyebrow : '',
+      panelTitle: p ? p.title : '',
+      panelIntro: p ? p.intro : '',
+      panelCta: p ? p.cta : '',
+      panelHref: Component.url(panelDefault),
+      panelColumns,
+      nav
+    };
+  }
+}
+
+</script>
+</body>
+</html>

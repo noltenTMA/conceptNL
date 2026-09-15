@@ -1,0 +1,258 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "ui_kits/mobile-app/**",
+              "ui_kits/web-app/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Inter))/i]",
+        "message": "Font not provided by the design system. Available: Inter."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "MobileApp": {
+        "replaces": []
+      },
+      "WebApp": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--tma-accent-indigo",
+      "--tma-accent-mint",
+      "--tma-accent-rose",
+      "--tma-accent-sand",
+      "--tma-accent-slate",
+      "--tma-accent-violet",
+      "--tma-bg-dark",
+      "--tma-blue",
+      "--tma-blue-soft",
+      "--tma-blue-tint",
+      "--tma-border",
+      "--tma-border-input",
+      "--tma-border-strong",
+      "--tma-canvas",
+      "--tma-danger",
+      "--tma-divider",
+      "--tma-dot-blue",
+      "--tma-dot-green",
+      "--tma-dot-orange",
+      "--tma-dot-pink",
+      "--tma-dot-sky",
+      "--tma-dot-teal",
+      "--tma-dot-yellow",
+      "--tma-font-sans",
+      "--tma-fs-2xs",
+      "--tma-fs-base",
+      "--tma-fs-display",
+      "--tma-fs-h1",
+      "--tma-fs-h2",
+      "--tma-fs-h3",
+      "--tma-fs-h4",
+      "--tma-fs-h5",
+      "--tma-fs-lg",
+      "--tma-fs-sm",
+      "--tma-fs-xs",
+      "--tma-fw-bold",
+      "--tma-fw-medium",
+      "--tma-fw-regular",
+      "--tma-fw-semibold",
+      "--tma-illus-blue-deep",
+      "--tma-illus-green",
+      "--tma-illus-lime",
+      "--tma-illus-orange",
+      "--tma-illus-sky",
+      "--tma-illus-teal",
+      "--tma-illus-yellow",
+      "--tma-info",
+      "--tma-lh-loose",
+      "--tma-lh-normal",
+      "--tma-lh-snug",
+      "--tma-lh-tight",
+      "--tma-navy",
+      "--tma-photo-gradient",
+      "--tma-radius-2xl",
+      "--tma-radius-lg",
+      "--tma-radius-md",
+      "--tma-radius-pill",
+      "--tma-radius-sm",
+      "--tma-radius-xl",
+      "--tma-radius-xs",
+      "--tma-shadow-md",
+      "--tma-shadow-sm",
+      "--tma-shadow-xs",
+      "--tma-space-1",
+      "--tma-space-10",
+      "--tma-space-12",
+      "--tma-space-16",
+      "--tma-space-2",
+      "--tma-space-3",
+      "--tma-space-4",
+      "--tma-space-5",
+      "--tma-space-6",
+      "--tma-space-8",
+      "--tma-success",
+      "--tma-surface",
+      "--tma-text",
+      "--tma-text-disabled",
+      "--tma-text-muted",
+      "--tma-text-on-dark",
+      "--tma-text-on-navy-muted",
+      "--tma-text-secondary",
+      "--tma-tint-amber",
+      "--tma-tint-coral",
+      "--tma-tint-indigo",
+      "--tma-tint-lime",
+      "--tma-tint-magenta",
+      "--tma-tint-mint",
+      "--tma-tint-rose",
+      "--tma-tint-sand",
+      "--tma-tint-sky",
+      "--tma-tint-slate",
+      "--tma-tint-teal",
+      "--tma-tint-violet",
+      "--tma-warning"
+    ],
+    "tokenKinds": {
+      "--tma-navy": "color",
+      "--tma-blue": "color",
+      "--tma-blue-tint": "color",
+      "--tma-blue-soft": "color",
+      "--tma-canvas": "color",
+      "--tma-surface": "color",
+      "--tma-text": "font",
+      "--tma-text-secondary": "font",
+      "--tma-text-muted": "font",
+      "--tma-text-disabled": "font",
+      "--tma-text-on-dark": "font",
+      "--tma-text-on-navy-muted": "font",
+      "--tma-border": "color",
+      "--tma-border-input": "color",
+      "--tma-divider": "color",
+      "--tma-border-strong": "color",
+      "--tma-dot-green": "color",
+      "--tma-dot-orange": "color",
+      "--tma-dot-pink": "color",
+      "--tma-dot-yellow": "color",
+      "--tma-dot-teal": "color",
+      "--tma-dot-blue": "color",
+      "--tma-dot-sky": "color",
+      "--tma-illus-orange": "color",
+      "--tma-illus-blue-deep": "color",
+      "--tma-illus-sky": "color",
+      "--tma-illus-yellow": "color",
+      "--tma-illus-green": "color",
+      "--tma-illus-lime": "color",
+      "--tma-illus-teal": "color",
+      "--tma-bg-dark": "color",
+      "--tma-accent-indigo": "color",
+      "--tma-accent-violet": "color",
+      "--tma-accent-rose": "color",
+      "--tma-accent-sand": "color",
+      "--tma-accent-slate": "color",
+      "--tma-accent-mint": "color",
+      "--tma-tint-sky": "color",
+      "--tma-tint-teal": "color",
+      "--tma-tint-coral": "color",
+      "--tma-tint-amber": "color",
+      "--tma-tint-magenta": "color",
+      "--tma-tint-lime": "color",
+      "--tma-tint-indigo": "color",
+      "--tma-tint-violet": "color",
+      "--tma-tint-rose": "color",
+      "--tma-tint-sand": "color",
+      "--tma-tint-slate": "color",
+      "--tma-tint-mint": "color",
+      "--tma-success": "color",
+      "--tma-warning": "color",
+      "--tma-danger": "color",
+      "--tma-info": "color",
+      "--tma-shadow-xs": "shadow",
+      "--tma-shadow-sm": "shadow",
+      "--tma-shadow-md": "shadow",
+      "--tma-radius-xs": "radius",
+      "--tma-radius-sm": "radius",
+      "--tma-radius-md": "radius",
+      "--tma-radius-lg": "radius",
+      "--tma-radius-xl": "radius",
+      "--tma-radius-2xl": "radius",
+      "--tma-radius-pill": "radius",
+      "--tma-space-1": "spacing",
+      "--tma-space-2": "spacing",
+      "--tma-space-3": "spacing",
+      "--tma-space-4": "spacing",
+      "--tma-space-5": "spacing",
+      "--tma-space-6": "spacing",
+      "--tma-space-8": "spacing",
+      "--tma-space-10": "spacing",
+      "--tma-space-12": "spacing",
+      "--tma-space-16": "spacing",
+      "--tma-photo-gradient": "other",
+      "--tma-font-sans": "font",
+      "--tma-fs-display": "spacing",
+      "--tma-fs-h1": "spacing",
+      "--tma-fs-h2": "spacing",
+      "--tma-fs-h3": "spacing",
+      "--tma-fs-h4": "spacing",
+      "--tma-fs-h5": "spacing",
+      "--tma-fs-lg": "spacing",
+      "--tma-fs-base": "spacing",
+      "--tma-fs-sm": "spacing",
+      "--tma-fs-xs": "spacing",
+      "--tma-fs-2xs": "spacing",
+      "--tma-fw-regular": "font",
+      "--tma-fw-medium": "font",
+      "--tma-fw-semibold": "font",
+      "--tma-fw-bold": "font",
+      "--tma-lh-tight": "font",
+      "--tma-lh-snug": "font",
+      "--tma-lh-normal": "font",
+      "--tma-lh-loose": "font"
+    },
+    "fontFamilies": [
+      "Inter"
+    ]
+  }
+}
