@@ -1,6 +1,8 @@
 # tma.nl — design handoff
 
-Everything in this folder is a **design reference**, not production code. Open it in Visual Studio / VS Code to read the markup, lift exact values, and rebuild the pages in your real stack (Next.js, Nuxt, Astro, Laravel Blade, whatever tma.nl runs on). Do not ship these files as the site.
+This repository contains the TMA homepage design handoff and a static GitHub Pages preview. `index.html` is an exact root entry point for the homepage; `TMA Homepage v2.dc.html` remains the original handoff file.
+
+The page is still a **design reference**, not production-ready site code. It contains documented placeholder copy/data and presentation-only forms, search, filters, and links. Replace those before using the design in production.
 
 ## What's here
 
@@ -13,7 +15,7 @@ assets/                    photography, logo lockups, Tabler icon SVGs
 _ds/                       TMA Design System — tokens, stylesheets, Inter fonts
 ```
 
-## Opening it
+## Opening it locally
 
 The files are plain HTML but load `support.js` and the design-system CSS by relative path, so they need to be served, not opened via `file://`.
 
@@ -31,7 +33,17 @@ npx serve .
 python3 -m http.server 8000
 ```
 
-Then browse to `TMA Homepage v2.dc.html`.
+Then browse to `http://localhost:8000/` for the Pages entry point, or to `TMA Homepage v2.dc.html` to inspect the original handoff.
+
+## GitHub Pages
+
+The repository includes `.github/workflows/pages.yml`, which deploys the repository as a static project site whenever changes land on `main`. The published homepage is:
+
+```text
+https://noltentma.github.io/conceptNL/
+```
+
+The workflow has no build step: it uploads the repository contents as-is so the existing relative references to `assets/`, `support.js`, `image-slot.js`, and `_ds/` continue to resolve under `/conceptNL/`. GitHub Pages must be enabled for **GitHub Actions** in the repository Pages settings.
 
 ## Structure of the two files
 
